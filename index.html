@@ -5,69 +5,24 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
+	@font-face {font-family: 'Leckerli One';font-style: normal;font-weight: 400;src: local('Leckerli One'), local('LeckerliOne-Regular'), url(http://fonts.gstatic.com/s/leckerlione/v7/S2Y_iLrItTu8kIJTkS7DrBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;}
 	* { text-align:center; }
-	@font-face {
-	  font-family: 'Leckerli One';
-	  font-style: normal;
-	  font-weight: 400;
-	  src: local('Leckerli One'), local('LeckerliOne-Regular'), url(http://fonts.gstatic.com/s/leckerlione/v7/S2Y_iLrItTu8kIJTkS7DrBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-	  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-	}
-	 body{
-	 	font-family: 13px/18px Arial, sans-serif;
-	 	margin: 0;
-	 	background-color: #000; 
-		color: #2F4F4F;
-	 }
-	 h1{
-	 	font-family: 'Leckerli One', cursive;
-	 }
-	 .container{
-	 	text-align:center;
-	 	max-width: 600px;
-	  margin: 50px auto;
-	  position: absolute;
-	  top: 20px;
-	  left: 30%;
-	 }
-	 .jumbotron {
-	  background-color: #F5FFFA;
-	  background-color: rgba(240,255,240,0.95);
-	  padding: 50px 10px;
-	 }
-	 ul {
-	 	list-style-image: url('img/list.png')
-	 }
-	 .jumbotron li p{
-	 	font-size: 17px;
-	 	text-align: left;
-	 }
-	 span{
-	 	font-size:12px;
-	 	margin: 5px 10px 20px;
-	 }
-	 .slide {
-	 	margin: 0px auto;
-	 	padding: 0px 10px;
-	 	min-width: 1300px;
-	 }
-	.scrollme {
-	  width: 1316px;
-	  padding: 2em;
-	  border: 1em solid rgba(240,255,240,0.95);
-	  margin: 0px 50px;
-		}
-	.animateme {
-	  width:100%;
-	  padding:1%;
-	  background:#F5FFFA;
-	  /*transform-origin:center center center;*/
-	}
+	body{ font-family: 13px/18px Arial, sans-serif; margin: 0; background-color: #000; 
+		color: #2F4F4F;}
+	h1{ font-family: 'Leckerli One', cursive;}
+	.container{ text-align:center; max-width: 600px;margin: 50px auto;position: absolute;top: 20px;left: 30%;}
+	.jumbotron {background-color: #F5FFFA;background-color: rgba(240,255,240,0.95);padding: 50px 10px;}
+	.jumbotron li p{ font-size: 17px; text-align: left;}
+	ul { list-style-image: url('img/list.png')}
+	span{ font-size:12px; margin: 5px 10px 20px;}
+	.slide {width: 100%;margin: 0px auto; padding: 0px 10px;}
+	.scrollme {padding: 2em;border: 1em solid rgba(240,255,240,0.95);margin: 0px 50px;}
+	.animateme {width:100%;padding:1%;background:#F5FFFA;transform-origin:center center center; }
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<img class="slide" src="img/bg.jpg">
+	<div class="wrapper col-md-12">
+		<img class="img-responsive slide" src="img/bg.jpg">
 		<div class="container">
 			<div class="jumbotron">
 				<img src='img/logo.png'>
@@ -86,24 +41,24 @@
 					<p>Contact us at <a href="mailto:information@modpodmix.com">information@modpodmix.com</a> if you want to chat further</p>
 			</div>
 		</div>
-		<img class="slide" src="img/bg2.jpg">
-		<img class="slide" src="img/bg3.jpg">
-	  <img class="slide" src="img/bg4.jpg">
-	  <div class="scrollme">
-    <div
-        class="animateme"
-        data-when="enter"
-        data-from="0.5"
-        data-to="0"
-        data-opacity="0"
-        data-translatex="-200"
-        data-rotatez="180"
-    	>
+		<img class="img-responsive slide" src="img/bg2.jpg">
+		<img class="img-responsive slide" src="img/bg3.jpg">
+		<img class="img-responsive slide" src="img/bg4.jpg">
+		<div class="scrollme">
+	    <div
+	        class="animateme"
+	        data-when="enter"
+	        data-from="0.5"
+	        data-to="0"
+	        data-opacity="0"
+	        data-translatex="-200"
+	        data-rotatez="180"
+	    	>
         <h1>Come Grow with us</h1>
     	</div>
 		</div>
-	  <img class="slide" src="img/bg5.jpg">
-	  <img class="slide" src="img/bg6.jpg">
+		<img class="img-responsive slide" src="img/bg5.jpg">
+		<img class="img-responsive slide" src="img/bg6.jpg">
 	</div>
 <script>
 // ----------------------------------------------------------------------------------------------------
