@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<style>
 	 body{
@@ -24,7 +25,7 @@
 	  padding: 50px 10px;
 	 }
 	 ul {
-	 	list-style-image: url('/img/list.png')
+	 	list-style-image: url('img/list.png')
 	 }
 	 .jumbotron li p{
 	 	font-size: 17px;
@@ -92,19 +93,9 @@
 	  <img class="slide" src="img/bg5.jpg">
 	</div>
 <script>
-// ----------------------------------------------------------------------------------------------------
-// ScrollMe
-// A jQuery plugin for adding simple scrolling effects to web pages
-// http://scrollme.nckprsn.com
-// ----------------------------------------------------------------------------------------------------
 
 var scrollme = ( function( $ )
-
-	// ScrollMe object
-
 	var _this = {};
-	// Properties
-
 	var $document = $( document );
 	var $window = $( window );
 
